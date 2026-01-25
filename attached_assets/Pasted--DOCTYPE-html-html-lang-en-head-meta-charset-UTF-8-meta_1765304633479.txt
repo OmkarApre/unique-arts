@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Arts Pvt. Ltd.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#f4f6f8;color:#111;}
+
+    header{
+      background:linear-gradient(to right,#003300,#006600);
+      padding:20px 60px;color:#fff;
+      display:flex;align-items:center;justify-content:space-between;
+      position:sticky;top:0;z-index:1000;
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    nav a{
+      color:#fff;text-decoration:none;margin-left:20px;font-weight:500;font-size:15px;
+    }
+
+    .hero{
+      height:90vh;
+      background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1581091012184-5c2cbd48e3c2') center/cover no-repeat;
+      color:#fff;text-align:center;
+      display:flex;flex-direction:column;justify-content:center;
+    }
+
+    .hero h1{font-size:3.5rem;letter-spacing:2px;}
+    .hero p{font-size:1.2rem;margin-top:10px;}
+
+    .section{padding:80px 8%;}
+    .section h2{text-align:center;font-size:2.8rem;margin-bottom:50px;}
+
+    .services, .nameplates{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;padding:25px;border-radius:20px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.08);
+      transition:0.3s;text-align:center;
+    }
+
+    .card:hover{transform:translateY(-10px);}
+    .card img{
+      width:100%;height:200px;object-fit:cover;
+      border-radius:15px;margin-bottom:15px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;height:260px;object-fit:cover;
+      border-radius:18px;box-shadow:0 15px 30px rgba(0,0,0,0.1);
+      transition:.3s;
+    }
+
+    .gallery img:hover{transform:scale(1.05);}
+
+    .contact-box{text-align:center;}
+    .btn{
+      display:inline-block;margin-top:25px;
+      background:#006600;color:#fff;
+      padding:14px 40px;border-radius:30px;text-decoration:none;
+    }
+
+    footer{
+      background:#000;color:#aaa;text-align:center;padding:25px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Unique Arts Pvt. Ltd.</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Works</a>
+    <a href="#nameplate">Nameplates</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Unique Arts Pvt. Ltd.</h1>
+  <p>Crafting Premium Fiber, CNC, Sculpture & Artistic Works</p>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p style="max-width:850px;margin:auto;text-align:center;">
+    We specialize in high-end Fiber (FRP), GRC, CNC cutting, sculptures,
+    nameplates and custom artistic solutions with premium finishing.
+  </p>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Works</h2>
+  <div class="services">
+    <div class="card"><img src="https://images.unsplash.com/photo-1581093458799-1c49a575c5be"><h3>Fiber (FRP)</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1604014237744-8f36d0c1c4b9"><h3>GRC Works</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1601041084273-6114cad589d1"><h3>3D Sculptures</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1601132359861-4d3f9d7b51fd"><h3>Fountains</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9"><h3>CNC & Laser Cutting</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1616588589676-62b4a2d3bfb8"><h3>Custom Art Works</h3></div>
+  </div>
+</section>
+
+<section class="section" id="nameplate">
+  <h2>Nameplates & Signage</h2>
+  <div class="nameplates">
+    <div class="card"><img src="https://images.unsplash.com/photo-1581092795360-5c2cbd48e3c2"><h3>Metal Nameplates</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1581092729671-bc0c5d9e4d9b"><h3>Acrylic Nameplates</h3></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1581092918367-9dfd3c6d8c9d"><h3>LED Nameplates</h3></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1581320541422-c43e1f3b7cfa">
+    <img src="https://images.unsplash.com/photo-1581091870622-3b2a3a1de142">
+    <img src="https://images.unsplash.com/photo-1591696205434-5221b0f4f0c8">
+    <img src="https://images.unsplash.com/photo-1601041080631-99b35d3cb147">
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> +91 98220 20949</p>
+    <p><strong>Email:</strong> uniqueinterior155@gmail.com</p>
+    <a class="btn" href="https://share.google/aAa8ZfYj66BaIhxP8" target="_blank">
+      View Location
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Unique Arts Pvt. Ltd. – All Rights Reserved
+</footer>
+
+</body>
+</html>
