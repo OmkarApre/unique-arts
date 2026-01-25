@@ -2,15 +2,15 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Sparkles, Landmark, Droplets, Box, Scissors, Layers, DoorOpen, Tag, Shield } from "lucide-react";
 
-import safetyDoorImg from "@assets/latest-metal-jali-door-design-for-home_1767446070307.jpg";
-import fiberServiceImg from "@assets/WhatsApp_Image_2026-01-03_at_2.03.23_PM_1767430736932.jpeg";
-import grcServiceImg from "@assets/WhatsApp_Image_2026-01-03_at_2.28.30_PM_(2)_1767434136022.jpeg";
-import sculptureServiceImg from "@assets/generated_images/elegant_artistic_sculpture_masterpiece.png";
-import fountainServiceImg from "@assets/generated_images/decorative_water_fountain.png";
-import threeDServiceImg from "@assets/WhatsApp_Image_2025-12-17_at_2.24.32_PM_(1)_1765975274082.jpeg";
-import cncServiceImg from "@assets/generated_images/cnc_laser_cut_artwork.png";
-import doorServiceImg from "@assets/WhatsApp_Image_2025-12-17_at_2.24.44_PM_1767439346476.jpeg";
-import nameplateServiceImg from "@assets/Name_plates_2_compressed_compressed_page-0082_1765972916179.jpg";
+import safetyDoorImg from "../assets/latest-metal-jali-door-design-for-home_1767446070307.jpg";
+import fiberServiceImg from "../assets/WhatsApp_Image_2026-01-03_at_2.03.23_PM_1767430736932.jpeg";
+import grcServiceImg from "../assets/WhatsApp_Image_2026-01-03_at_2.28.30_PM_(2)_1767434136022.jpeg";
+import sculptureServiceImg from "../assets/generated_images/elegant_artistic_sculpture_masterpiece.png";
+import fountainServiceImg from "../assets/generated_images/decorative_water_fountain.png";
+import threeDServiceImg from "../assets/WhatsApp_Image_2025-12-17_at_2.24.32_PM_(1)_1765975274082.jpeg";
+import cncServiceImg from "../assets/generated_images/cnc_laser_cut_artwork.png";
+import doorServiceImg from "../assets/WhatsApp_Image_2025-12-17_at_2.24.44_PM_1767439346476.jpeg";
+import nameplateServiceImg from "../assets/Name_plates_2_compressed_compressed_page-0082_1765972916179.jpg";
 
 const services = [
   {

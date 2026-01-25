@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
-import logoImage from "@assets/WhatsApp_Image_2025-12-09_at_11.14.47_PM-removebg-preview_1765304677212.png";
+import logoImage from "../assets/logotext.png";
 
 const quickLinks = [
   { name: "Home", href: "#home" },

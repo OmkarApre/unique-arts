@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoImage from "@assets/WhatsApp_Image_2025-12-09_at_11.14.47_PM-removebg-preview_1765304677212.png";
+import logoImage from "../assets/logotext.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },

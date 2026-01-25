@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { motion, useInView } from "framer-motion";
 import { Award, Users, Clock, ThumbsUp } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import workshopImage from "@assets/generated_images/MERGE.jpg";
+import workshopImage from "../assets/generated_images/MERGE.jpg";
 
 const stats = [
   { icon: Clock, value: 15, suffix: "+", label: "Years Experience" },

@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImage from "@assets/generated_images/luxury_art_showroom_showcase.png";
-import logoImage from "@assets/WhatsApp_Image_2025-12-09_at_11.14.47_PM-removebg-preview_1765304677212.png";
+import heroImage from "../assets/generated_images/luxury_art_showroom_showcase.png";
+import logoImage from "../assets/logotext.png";
 
 export default function Hero() {
   const scrollToPortfolio = () => {
