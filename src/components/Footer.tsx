@@ -107,10 +107,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
+                <address className="text-sm text-muted-foreground not-italic">
                   Behind Amanora City, Sade Satara Nali Railway Gate, Hadapsar,
                   Pune - 411028
-                </span>
+                </address>
               </li>
             </ul>
           </div>
