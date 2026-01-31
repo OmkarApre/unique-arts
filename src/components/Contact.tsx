@@ -35,7 +35,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Unit 3, Gat No. 463/2, Gaikwad Vasti, Village Kuruli, MIDC Chakan, Pune - 410501",
-    href: "https://share.google/TTLeJH0z0x2cGFqPB",
+    href: "https://maps.app.goo.gl/3oWqiJtxBGXTDjj97",
   },
 ];
 
