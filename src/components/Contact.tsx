@@ -72,9 +72,10 @@ export default function Contact() {
       formDataToSend.append('_subject', 'New Contact Form Submission - Unique Arts');
       formDataToSend.append('_captcha', 'false');
       formDataToSend.append('_template', 'table');
-
+      let url = import.meta.env.VITE_FORM_SUBMIT_URL;
+      console.log(url);
       // Submit to FormSubmit
-      const response = await fetch(process.env.VITE_FORM_SUBMIT_URL, {
+      const response = await fetch(url, {
         method: 'POST',
         body: formDataToSend,
         headers: {
