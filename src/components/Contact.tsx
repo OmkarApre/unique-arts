@@ -34,8 +34,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Behind Amanora City, Sade Satara Nali Railway Gate, Hadapsar, Pune - 411028",
-    href: "https://share.google/aAa8ZfYj66BaIhxP8",
+    value: "Unit 3, Gat No. 463/2, Gaikwad Vasti, Village Kuruli, MIDC Chakan, Pune - 410501",
+    href: "https://share.google/TTLeJH0z0x2cGFqPB",
   },
 ];
 
@@ -299,7 +299,7 @@ export default function Contact() {
 
             <div className="rounded-md overflow-hidden h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.93!3d18.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMwJzM2LjAiTiA3M8KwNTUnNDguMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=Unique+Laser+Cutting+Unit+3+Gat+No+463/2+Gaikwad+Vasti+Village+Kuruli+MIDC+Chakan+Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

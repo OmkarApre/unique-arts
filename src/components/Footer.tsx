@@ -108,8 +108,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
                 <address className="text-sm text-muted-foreground not-italic">
-                  Behind Amanora City, Sade Satara Nali Railway Gate, Hadapsar,
-                  Pune - 411028
+                  Unit 3, Gat No. 463/2, Gaikwad Vasti, Village Kuruli, MIDC
+                  Chakan, Pune - 410501
                 </address>
               </li>
             </ul>
