@@ -299,7 +299,7 @@ export default function Contact() {
 
             <div className="rounded-md overflow-hidden h-64">
               <iframe
-                src="https://maps.google.com/maps?q=Unique+Laser+Cutting+Unit+3+Gat+No+463/2+Gaikwad+Vasti+Village+Kuruli+MIDC+Chakan+Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Unique+CNC+Sade+Satra+Nali+Hadapsar+Pune&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
