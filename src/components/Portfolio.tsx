@@ -1722,6 +1722,48 @@ const portfolioItems = [
     image: godDesign20,
     description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
   },
+  {
+    id: 620,
+    title: "2D God Design - Mahadev",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign21,
+    description: "Premium deity laser-cut pattern for decorative panels. Fully customizable.",
+  },
+  {
+    id: 621,
+    title: "2D God Design - Mahadev2",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign22,
+    description: "Divine sacred laser-cut artwork for temple decoration. Fully customizable.",
+  },
+  {
+    id: 622,
+    title: "2D God Design - Krishna3",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign23,
+    description: "Elegant 2D god laser-cut design for interior applications. Fully customizable.",
+  },
+  {
+    id: 623,
+    title: "2D God Design - Krishna4",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign24,
+    description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
+  },
+  {
+    id: 624,
+    title: "2D God Design - Krishna4",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign25,
+    description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
+  },
+
+
 
 ];
 
