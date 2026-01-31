@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send, Clock } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import { useToast } from "@/hooks/use-toast";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 
 const contactInfo = [
   {
@@ -46,34 +49,53 @@ const services = [
   "Other",
 ];
 
+const contactSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email address"),
+  phone: z.string().optional(),
+  service: z.string().optional(),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type ContactFormData = z.infer<typeof contactSchema>;
+
 export default function Contact() {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
-  });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
 
     try {
       // Create FormData object for FormSubmit
       const formDataToSend = new FormData();
-      formDataToSend.append('Name', formData.name);
-      formDataToSend.append('Email', formData.email);
-      formDataToSend.append('Phone', formData.phone || 'Not provided');
-      formDataToSend.append('Service', formData.service || 'Not specified');
-      formDataToSend.append('Message', formData.message);
+      formDataToSend.append('Name', data.name);
+      formDataToSend.append('Email', data.email);
+      formDataToSend.append('Phone', data.phone || 'Not provided');
+      formDataToSend.append('Service', data.service || 'Not specified');
+      formDataToSend.append('Message', data.message);
       formDataToSend.append('_subject', 'New Contact Form Submission - Unique Arts');
       formDataToSend.append('_captcha', 'false');
       formDataToSend.append('_template', 'table');
       let url = import.meta.env.VITE_FORM_SUBMIT_URL;
       console.log(url);
+
       // Submit to FormSubmit
       const response = await fetch(url, {
         method: 'POST',
@@ -89,13 +111,7 @@ export default function Contact() {
           description: "Thank you for contacting us. We'll get back to you soon.",
         });
 
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          service: "",
-          message: "",
-        });
+        reset();
       } else {
         throw new Error("Failed to send message");
       }
@@ -141,20 +157,20 @@ export default function Contact() {
           >
             <Card className="p-6 md:p-8">
               <h3 className="text-xl font-semibold mb-6">Send us a message</h3>
-              <div className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name *</Label>
                     <Input
                       id="name"
                       placeholder="Your name"
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                      required
+                      {...register("name")}
                       data-testid="input-name"
+                      aria-invalid={!!errors.name}
                     />
+                    {errors.name && (
+                      <p className="text-sm text-red-500">{errors.name.message}</p>
+                    )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email *</Label>
@@ -162,13 +178,13 @@ export default function Contact() {
                       id="email"
                       type="email"
                       placeholder="your@email.com"
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                      required
+                      {...register("email")}
                       data-testid="input-email"
+                      aria-invalid={!!errors.email}
                     />
+                    {errors.email && (
+                      <p className="text-sm text-red-500">{errors.email.message}</p>
+                    )}
                   </div>
                 </div>
 
@@ -179,10 +195,7 @@ export default function Contact() {
                       id="phone"
                       type="tel"
                       placeholder="+91 XXXXX XXXXX"
-                      value={formData.phone}
-                      onChange={(e) =>
-                        setFormData({ ...formData, phone: e.target.value })
-                      }
+                      {...register("phone")}
                       data-testid="input-phone"
                     />
                   </div>
@@ -190,10 +203,7 @@ export default function Contact() {
                     <Label htmlFor="service">Service Interest</Label>
                     <select
                       id="service"
-                      value={formData.service}
-                      onChange={(e) =>
-                        setFormData({ ...formData, service: e.target.value })
-                      }
+                      {...register("service")}
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                       data-testid="select-service"
                     >
@@ -213,19 +223,19 @@ export default function Contact() {
                     id="message"
                     placeholder="Tell us about your project..."
                     rows={5}
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    required
+                    {...register("message")}
                     data-testid="input-message"
+                    aria-invalid={!!errors.message}
                   />
+                  {errors.message && (
+                    <p className="text-sm text-red-500">{errors.message.message}</p>
+                  )}
                 </div>
 
                 <Button
-                  onClick={handleSubmit}
+                  type="submit"
                   className="w-full"
-                  disabled={isSubmitting || !formData.name || !formData.email || !formData.message}
+                  disabled={isSubmitting}
                   data-testid="button-submit-contact"
                 >
                   {isSubmitting ? (
@@ -241,7 +251,7 @@ export default function Contact() {
                 <p className="text-xs text-muted-foreground text-center">
                   We respect your privacy. Your information will never be shared.
                 </p>
-              </div>
+              </form>
             </Card>
           </motion.div>
 
