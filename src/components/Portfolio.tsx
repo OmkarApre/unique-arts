@@ -208,6 +208,10 @@ import godDesign22 from "../assets/GodDesign_Hanuman_Red.jpg";
 import godDesign23 from "../assets/GodDesign_Krishna_Cow.jpg";
 import godDesign24 from "../assets/GodDesign_Murugan.jpg";
 import godDesign25 from "../assets/GodDesign_Krishna_Feather.jpg";
+import godDesign26 from "../assets/GodDesign_RadhaKrishna_Red_02.jpg";
+import godDesign27 from "../assets/GodDesign_StandingDeity_Arch.jpg";
+import godDesign28 from "../assets/GodDesign_ShivaParvatiGanesha.jpg";
+import godDesign29 from "../assets/GodDesign_Krishna_Flute_Standing.jpg";
 
 const portfolioItems = [
   {
@@ -1724,7 +1728,7 @@ const portfolioItems = [
   },
   {
     id: 620,
-    title: "2D God Design - Mahadev",
+    title: "2D God Design - Hanuman ji",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign21,
@@ -1732,7 +1736,7 @@ const portfolioItems = [
   },
   {
     id: 621,
-    title: "2D God Design - Mahadev2",
+    title: "2D God Design - Hanuman ji",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign22,
@@ -1740,7 +1744,7 @@ const portfolioItems = [
   },
   {
     id: 622,
-    title: "2D God Design - Krishna3",
+    title: "2D God Design - Krishna and Cow",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign23,
@@ -1748,7 +1752,7 @@ const portfolioItems = [
   },
   {
     id: 623,
-    title: "2D God Design - Krishna4",
+    title: "2D God Design - Krishna and Peacock",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign24,
@@ -1756,11 +1760,43 @@ const portfolioItems = [
   },
   {
     id: 624,
-    title: "2D God Design - Krishna4",
+    title: "2D God Design - Krishna with feather",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign25,
     description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
+  },
+  {
+    id: 625,
+    title: "2D God Design - Radha Krishna",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign26,
+    description: "Beautiful red 2D laser-cut design of Radha Krishna with a cow. Fully customizable.",
+  },
+  {
+    id: 626,
+    title: "2D God Design - Standing Deity",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign27,
+    description: "Intricate black and white 2D laser-cut design of a standing deity in an arch. Fully customizable.",
+  },
+  {
+    id: 627,
+    title: "2D God Design - Shiva Parvati Ganesha",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign28,
+    description: "Divine red 2D laser-cut design of Shiva, Parvati, and Ganesha. Fully customizable.",
+  },
+  {
+    id: 628,
+    title: "2D God Design - Standing Krishna",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign29,
+    description: "Elegant red 2D laser-cut design of Lord Krishna playing the flute. Fully customizable.",
   },
 
 
