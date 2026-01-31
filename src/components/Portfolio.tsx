@@ -212,6 +212,9 @@ import godDesign26 from "../assets/GodDesign_RadhaKrishna_Red_02.jpg";
 import godDesign27 from "../assets/GodDesign_StandingDeity_Arch.jpg";
 import godDesign28 from "../assets/GodDesign_ShivaParvatiGanesha.jpg";
 import godDesign29 from "../assets/GodDesign_Krishna_Flute_Standing.jpg";
+import godDesign30 from "../assets/GodDesign_VitthalRukmini_Red.jpg";
+import godDesign31 from "../assets/GodDesign_DeityFace_Red.jpg";
+import godDesign32 from "../assets/GodDesign_SwamiSamarth_Red.jpg";
 
 const portfolioItems = [
   {
@@ -1776,7 +1779,7 @@ const portfolioItems = [
   },
   {
     id: 626,
-    title: "2D God Design - Standing Deity",
+    title: "2D God Design - Ram lalla",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign27,
@@ -1797,6 +1800,30 @@ const portfolioItems = [
     categoryLabel: "2D God Designs",
     image: godDesign29,
     description: "Elegant red 2D laser-cut design of Lord Krishna playing the flute. Fully customizable.",
+  },
+  {
+    id: 629,
+    title: "2D God Design - Vitthal Rukmini",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign30,
+    description: "Divine red 2D laser-cut design of Lord Vitthal and Rukmini. Fully customizable.",
+  },
+  {
+    id: 630,
+    title: "2D God Design - TuljaBhavani Mata",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign31,
+    description: "Intricate red 2D laser-cut design of a deity face with elaborate crown details. Fully customizable.",
+  },
+  {
+    id: 631,
+    title: "2D God Design - Swami Samarth",
+    category: "2dgoddesign",
+    categoryLabel: "2D God Designs",
+    image: godDesign32,
+    description: "Sacred red 2D laser-cut design involving Swami Samarth imagery. Fully customizable.",
   },
 
 
