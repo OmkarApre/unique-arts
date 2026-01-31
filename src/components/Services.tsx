@@ -14,6 +14,7 @@ import nameplateServiceImg from "../assets/Name_plates_2_compressed_compressed_p
 
 const services = [
   {
+    id: "fiber",
     icon: Sparkles,
     title: "Fiber (FRP)",
     description:
@@ -21,6 +22,7 @@ const services = [
     image: fiberServiceImg,
   },
   {
+    id: "grc",
     icon: Landmark,
     title: "GRC Works",
     description:
@@ -28,6 +30,7 @@ const services = [
     image: grcServiceImg,
   },
   {
+    id: "sculpture",
     icon: Box,
     title: "Sculpture",
     description:
@@ -35,6 +38,7 @@ const services = [
     image: sculptureServiceImg,
   },
   {
+    id: "fountains",
     icon: Droplets,
     title: "Fountains",
     description:
@@ -42,6 +46,7 @@ const services = [
     image: fountainServiceImg,
   },
   {
+    id: "3dwallpanel",
     icon: Layers,
     title: "3D Works",
     description:
@@ -49,6 +54,7 @@ const services = [
     image: threeDServiceImg,
   },
   {
+    id: "3ddoor",
     icon: DoorOpen,
     title: "3D Doors",
     description:
@@ -56,6 +62,7 @@ const services = [
     image: doorServiceImg,
   },
   {
+    id: "nameplates",
     icon: Tag,
     title: "Name Plates",
     description:
@@ -63,6 +70,7 @@ const services = [
     image: nameplateServiceImg,
   },
   {
+    id: "cnc",
     icon: Scissors,
     title: "CNC & Laser Cutting",
     description:
@@ -70,6 +78,7 @@ const services = [
     image: cncServiceImg,
   },
   {
+    id: "safetydoorjali",
     icon: Shield,
     title: "MS & SS Safety Door Jali",
     description:
@@ -132,6 +141,19 @@ export default function Services() {
               <Card
                 className="h-full hover-elevate cursor-pointer transition-all duration-300 overflow-hidden"
                 data-testid={`card-service-${index}`}
+                onClick={() => {
+                  const params = new URLSearchParams(window.location.search);
+                  params.set("service", service.id);
+                  const newUrl = `${window.location.pathname}?${params.toString()}`;
+                  window.history.pushState({ path: newUrl }, "", newUrl);
+
+                  const portfolioSection = document.getElementById("portfolio");
+                  if (portfolioSection) {
+                    portfolioSection.scrollIntoView({ behavior: "smooth" });
+                    // Dispatch a custom event to notify Portfolio component if it's already mounted
+                    window.dispatchEvent(new Event("popstate"));
+                  }
+                }}
               >
                 <div className="relative h-48 overflow-hidden">
                   <img

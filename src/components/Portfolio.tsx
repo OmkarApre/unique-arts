@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -1716,7 +1716,7 @@ const portfolioItems = [
     image: godDesign20,
     description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
   },
-   {
+  {
     id: 620,
     title: "Om Back led design",
     category: "2dgoddesign",
@@ -1830,6 +1830,33 @@ export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [mainImageIndex, setMainImageIndex] = useState(0);
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      const params = new URLSearchParams(window.location.search);
+      const serviceId = params.get("service");
+
+      if (serviceId) {
+        const category = categories.find((c) => c.id === serviceId);
+
+        if (category) {
+          if (category.hasSubcategories) {
+            setViewState("subcategories");
+            setSelectedCategory(category.id);
+            setSelectedSubcategory(null);
+          } else {
+            setViewState("images");
+            setSelectedCategory(category.id);
+            setSelectedSubcategory(null);
+          }
+        }
+      }
+    };
+
+    handleLocationChange();
+    window.addEventListener("popstate", handleLocationChange);
+    return () => window.removeEventListener("popstate", handleLocationChange);
+  }, []);
 
   const getCategoryImages = (categoryId: string) => {
     return portfolioItems.filter((item) => item.category === categoryId);
@@ -2222,11 +2249,10 @@ export default function Portfolio() {
                       <button
                         key={image.id}
                         onClick={() => setMainImageIndex(index)}
-                        className={`flex-shrink-0 rounded-md overflow-hidden transition-all ${
-                          index === mainImageIndex
-                            ? "ring-2 ring-primary ring-offset-2 ring-offset-black"
-                            : "opacity-60 hover:opacity-100"
-                        }`}
+                        className={`flex-shrink-0 rounded-md overflow-hidden transition-all ${index === mainImageIndex
+                          ? "ring-2 ring-primary ring-offset-2 ring-offset-black"
+                          : "opacity-60 hover:opacity-100"
+                          }`}
                         data-testid={`button-thumbnail-${image.id}`}
                       >
                         <img

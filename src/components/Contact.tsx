@@ -74,7 +74,7 @@ export default function Contact() {
       formDataToSend.append('_template', 'table');
 
       // Submit to FormSubmit
-      const response = await fetch('https://formsubmit.co/50b6de6512d9f1415e02a1e0fafd5807', {
+      const response = await fetch(import.meta.env.VITE_FORM_SUBMIT_URL, {
         method: 'POST',
         body: formDataToSend,
         headers: {
@@ -87,7 +87,7 @@ export default function Contact() {
           title: "Message Sent Successfully!",
           description: "Thank you for contacting us. We'll get back to you soon.",
         });
-        
+
         setFormData({
           name: "",
           email: "",
@@ -236,7 +236,7 @@ export default function Contact() {
                     </>
                   )}
                 </Button>
-                
+
                 <p className="text-xs text-muted-foreground text-center">
                   We respect your privacy. Your information will never be shared.
                 </p>
