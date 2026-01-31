@@ -74,7 +74,7 @@ export default function Contact() {
       formDataToSend.append('_template', 'table');
 
       // Submit to FormSubmit
-      const response = await fetch(import.meta.env.VITE_FORM_SUBMIT_URL, {
+      const response = await fetch(process.env.VITE_FORM_SUBMIT_URL, {
         method: 'POST',
         body: formDataToSend,
         headers: {
