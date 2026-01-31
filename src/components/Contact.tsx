@@ -34,7 +34,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Unit 3, Gat No. 463/2, Gaikwad Vasti, Village Kuruli, MIDC Chakan, Pune - 410501",
+    value: "Unique CNC Sade Satra Nali, Hadapsar, Pune, Maharashtra 411028",
     href: "https://maps.app.goo.gl/3oWqiJtxBGXTDjj97",
   },
 ];
