@@ -201,7 +201,7 @@ import sculptureFigure from "../assets/WhatsApp_Image_2026-01-03_at_2.03.27_PM_(
 import sculptureThinker from "../assets/WhatsApp_Image_2026-01-03_at_2.03.21_PM_1767430615155.jpeg";
 import sculpturePolyWoman from "../assets/WhatsApp_Image_2026-01-03_at_2.03.20_PM_(1)_1767430615156.jpeg";
 import sculpturePolyMan from "../assets/WhatsApp_Image_2026-01-03_at_2.03.20_PM_1767430615156.jpeg";
-import om_backled_design from "../assets/om_back.jpeg"
+import GodDesign_RadhaKrishna_Red_02led_design from "../assets/GodDesign_RadhaKrishna_Red_02.jpeg"
 
 import godDesign21 from "../assets/GodDesign_Hanuman_Sitting.jpg";
 import godDesign22 from "../assets/GodDesign_Hanuman_Red.jpg";
@@ -1922,7 +1922,7 @@ const cncSubcategories = [
   {
     id: "2dgoddesign",
     name: "2D God Designs",
-    image: om_backled_design,
+    image: GodDesign_RadhaKrishna_Red_02led_design,
     description: "Mandir back acrylic 2d led design",
   },
 ];
