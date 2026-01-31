@@ -203,6 +203,12 @@ import sculpturePolyWoman from "../assets/WhatsApp_Image_2026-01-03_at_2.03.20_P
 import sculpturePolyMan from "../assets/WhatsApp_Image_2026-01-03_at_2.03.20_PM_1767430615156.jpeg";
 import om_backled_design from "../assets/om_back.jpeg"
 
+import godDesign21 from "../assets/GodDesign_Hanuman_Sitting.jpg";
+import godDesign22 from "../assets/GodDesign_Hanuman_Red.jpg";
+import godDesign23 from "../assets/GodDesign_Krishna_Cow.jpg";
+import godDesign24 from "../assets/GodDesign_Murugan.jpg";
+import godDesign25 from "../assets/GodDesign_Krishna_Feather.jpg";
+
 const portfolioItems = [
   {
     id: 1,
@@ -1558,7 +1564,7 @@ const portfolioItems = [
   },
   {
     id: 600,
-    title: "2D God Design - Pattern 1",
+    title: "2D God Design - Bal Krishna",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign01,
@@ -1566,7 +1572,7 @@ const portfolioItems = [
   },
   {
     id: 601,
-    title: "2D God Design - Pattern 2",
+    title: "2D God Design - Radha Krishna1",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign02,
@@ -1574,7 +1580,7 @@ const portfolioItems = [
   },
   {
     id: 602,
-    title: "2D God Design - Pattern 3",
+    title: "2D God Design - Sherowali Maa",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign03,
@@ -1582,7 +1588,7 @@ const portfolioItems = [
   },
   {
     id: 603,
-    title: "2D God Design - Pattern 4",
+    title: "2D God Design - Balaji",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign04,
@@ -1590,7 +1596,7 @@ const portfolioItems = [
   },
   {
     id: 604,
-    title: "2D God Design - Pattern 5",
+    title: "2D God Design - Ganpati1",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign05,
@@ -1598,7 +1604,7 @@ const portfolioItems = [
   },
   {
     id: 605,
-    title: "2D God Design - Pattern 6",
+    title: "2D God Design - Ganpati2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign06,
@@ -1606,7 +1612,7 @@ const portfolioItems = [
   },
   {
     id: 606,
-    title: "2D God Design - Pattern 7",
+    title: "2D God Design - Sarasvati Mata",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign07,
@@ -1614,7 +1620,7 @@ const portfolioItems = [
   },
   {
     id: 607,
-    title: "2D God Design - Pattern 8",
+    title: "2D God Design - Radha Krishna2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign08,
@@ -1622,7 +1628,7 @@ const portfolioItems = [
   },
   {
     id: 608,
-    title: "2D God Design - Pattern 9",
+    title: "2D God Design - Hanuman",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign09,
@@ -1630,7 +1636,7 @@ const portfolioItems = [
   },
   {
     id: 609,
-    title: "2D God Design - Pattern 10",
+    title: "2D God Design - Sherowali Maa2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign10,
@@ -1638,7 +1644,7 @@ const portfolioItems = [
   },
   {
     id: 610,
-    title: "2D God Design - Pattern 11",
+    title: "2D God Design - Ganpati3",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign11,
@@ -1646,7 +1652,7 @@ const portfolioItems = [
   },
   {
     id: 611,
-    title: "2D God Design - Pattern 12",
+    title: "2D God Design - hanuman2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign12,
@@ -1654,7 +1660,7 @@ const portfolioItems = [
   },
   {
     id: 612,
-    title: "2D God Design - Pattern 13",
+    title: "2D God Design - krishna1",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign13,
@@ -1662,7 +1668,7 @@ const portfolioItems = [
   },
   {
     id: 613,
-    title: "2D God Design - Pattern 14",
+    title: "2D God Design - Radha Krishna3",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign14,
@@ -1670,7 +1676,7 @@ const portfolioItems = [
   },
   {
     id: 614,
-    title: "2D God Design - Pattern 15",
+    title: "2D God Design - Radha Krishna4",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign15,
@@ -1678,7 +1684,7 @@ const portfolioItems = [
   },
   {
     id: 615,
-    title: "2D God Design - Pattern 16",
+    title: "2D God Design - krishna2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign16,
@@ -1686,7 +1692,7 @@ const portfolioItems = [
   },
   {
     id: 616,
-    title: "2D God Design - Pattern 17",
+    title: "2D God Design - Mahadev",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign17,
@@ -1694,7 +1700,7 @@ const portfolioItems = [
   },
   {
     id: 617,
-    title: "2D God Design - Pattern 18",
+    title: "2D God Design - Mahadev2",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign18,
@@ -1702,7 +1708,7 @@ const portfolioItems = [
   },
   {
     id: 618,
-    title: "2D God Design - Pattern 19",
+    title: "2D God Design - Krishna3",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign19,
@@ -1710,20 +1716,13 @@ const portfolioItems = [
   },
   {
     id: 619,
-    title: "2D God Design - Pattern 20",
+    title: "2D God Design - Krishna4",
     category: "2dgoddesign",
     categoryLabel: "2D God Designs",
     image: godDesign20,
     description: "Premium laser-cut deity pattern for gates and grills. Fully customizable.",
   },
-  {
-    id: 620,
-    title: "Om Back led design",
-    category: "2dgoddesign",
-    categoryLabel: "2D God Designs",
-    image: om_backled_design,
-    description: "Mandir back acrylic 2d led design",
-  },
+
 ];
 
 const categories = [
@@ -1818,8 +1817,8 @@ const cncSubcategories = [
   {
     id: "2dgoddesign",
     name: "2D God Designs",
-    image: godDesign01,
-    description: "Sacred deity laser-cut designs",
+    image: om_backled_design,
+    description: "Mandir back acrylic 2d led design",
   },
 ];
 
